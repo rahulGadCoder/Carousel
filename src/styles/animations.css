@@ -1,0 +1,26 @@
+@keyframes slide-in {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  
+  @keyframes reveal-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  .step-enter {
+    animation: slide-in 0.5s ease-in-out;
+  }
+  
+  .summary-enter {
+    animation: reveal-left 0.5s ease-in-out;
+  }
+  
